@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshal Dahiwal</title>
+    <link rel="stylesheet" href="Profile1.css">
+    <script src="https://kit.fontawesome.com/267e6f52cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h2>Harshal <span>Dahiwal</span></h2>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#resume">Resume</a></li> <!-- Updated navigation link -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I am <span>Harshal</span></h1>
+        </div>
+
+        <div style="margin-top: 100px;"></div>
+
+        <!-- My Skills Section -->
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')"><h2>My Skills</h2></p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>JAVA</span><div class="skill-rating-bar" style="--rating: 90%;"></div></li>
+                <li><span>C++</span><div class="skill-rating-bar" style="--rating: 50%;"></div></li>
+                <li><span>HTML</span><div class="skill-rating-bar" style="--rating: 80%;"></div></li>
+                <li><span>CSS</span><div class="skill-rating-bar" style="--rating: 70%;"></div></li>
+                <li><span>PYTHON</span><div class="skill-rating-bar" style="--rating: 70%;"></div></li>
+                <li><span>MySQL</span><div class="skill-rating-bar" style="--rating: 80%;"></div></li>
+                <li><span>JAVASCRIPT</span><div class="skill-rating-bar" style="--rating: 50%;"></div></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- My Projects Section -->
+<div id="projects">
+    <div class="container">
+        <div class="row" align="center">
+            <div class="about-col-2">
+                <h1 class="sub-title">My Projects</h1>
+                <div style="margin-top: 50px;"></div>
+                
+                <!-- Project Boxes -->
+                <div class="project-box">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1</p>
+                </div>
+                <div class="project-box">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                </div>
+                <div class="project-box">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-top: 100px;"></div>
+<!-- Experience Section -->
+<div id="Experience">
+    <div class="container">
+        <h1 class="sub-title" align="center">My Experience</h1>
+        <div class="Experience-list">
+            <div>
+                <h2>INTERNSHIP</h2>
+                <i class="fas fa-calendar-day"><span> DEC 2023 – JAN 2024</span></i>
+                <p align="left">4-week virtual internship at Oasis Infobyte, an innovative software development company specializing in Java applications.Over the course of this internship,
+                <p>I had the privilege of working on three distinct projects: the Number Guessing Game, Online Reservation System, and ATM Interface. Each project presented unique challenges and allowed me to apply my knowledge and skills in Java programming, user interface design, and backend development.</p>
+                </p>
+            </div>
+            <div>
+                <h2>INTERNSHIP</h2>
+                <i class="fas fa-calendar-day"><span> JAN 2024 – FEB 2022</span></i>
+                <p align ="left">During my internship, I successfully contributed to the development of an Online Course System as a leader, where I actively participated in designing and implementing all GUI framework. My work iucludes database management, user authentication, front-end development,etc. This experience enhanced my skills in JAVA, and I gained valuable insights into the practical aspects of creating a user-friendly and efficient online learning platform. I am proud to have been a main part of a project, As a leader that promotes accessible and effective education through technology.</p>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 100px;"></div>
+<!-- Resume Section -->
+<div class="resume">
+    <div class="container" id="resume"> <!-- Added ID to the resume section -->
+        <h1 class="sub-title" align="center">My Resume</h1>
+        <div class="Resume-list" align="center">
+            <a href="C:\Users\dheng\Desktop\portfolio2\image\RESUME FOR INTERNSHIP1.pdf" class="button button2" download>Download CV</a>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 100px;"></div>
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="row" align="center">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto:dhengletanmay@gmail.com">dahiwalharshal2003@gmail.com</a></p>
+                <p><i class="fas fa-mobile-alt"></i>+917058065709</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/harshal-dahiwal-30a593269//"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/the_harsh_24/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/DahiwalHarshal"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    <div style="margin-top: 80px;"></div>
+    <div class="copyright" align="center">
+        <p>Copyright © Harshal Dahiwal.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
